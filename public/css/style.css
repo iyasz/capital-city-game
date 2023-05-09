@@ -1,0 +1,56 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-hero {
+    padding: 140px 0px 20px 10px;
+}
+
+.header-hero .h1-header-hero {
+    font-size: 59px;
+    line-height: 1;
+    font-weight: 600;
+    color: #2b3a56;
+}
+
+.header-hero p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.header-hero .h1-header-hero span{
+    color: #dc3e3e;
+    position: relative;
+}
+
+.start-button-header {
+    font-weight: 500;
+    position: relative;
+    background: #dc3e3e;
+    z-index: 3;
+    top: 0; 
+    transition: top 0.3s ease;
+}
+
+.hero-header-button {
+    height: 20px;
+    cursor: pointer;
+}
+
+.hero-header-button:hover .start-button-header {
+    cursor: pointer;
+    background: #dc3e3e;
+    top: 7px;
+}
+
+.back-shadow-button {
+    position: relative;
+    bottom: 25px;
+    background: #d12d2d;
+}
+
+.header-hero .h1-header-hero span img {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-300px);
+}
