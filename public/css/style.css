@@ -54,3 +54,9 @@ body {
     bottom: 0;
     transform: translateX(-300px);
 }
+
+#visitorMap3 {
+    position: absolute;
+    transition: transform 2.4s ease;
+    transform: translateX(30);
+}
