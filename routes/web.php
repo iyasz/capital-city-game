@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/province', function () {
     return view('province.index');
 });
+
+Route::get('/province/{name}/capital_city', function () {
+    // return view('province.index');
+});

@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/jqvmap/dist/jqvmap.min.css">
-    {{-- <link rel="stylesheet" href="{{asset('jvectormap/jquery-jvectormap-2.0.5.css')}}"> --}}
+    @stack('css')
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
@@ -19,10 +18,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="/jqvmap/dist/jquery.vmap.min.js"></script>
-    <script src="/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-    <script src="/jqvmap/dist/maps/jquery.vmap.indonesia.js"></script>
-    {{-- <script src="{{asset('jvectormap/jquery-jvectormap-2.0.5.min.js')}}"></script> --}}
+    @stack('javascript')
     <script src="{{asset('js/main.js')}}"></script>
   </body>
 </html>

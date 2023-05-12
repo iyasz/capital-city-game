@@ -1,3 +1,9 @@
+function slugify(string) {
+  return string
+    .toLowerCase()
+    .replace(/[\s\W-]+/g, '-') 
+    .replace(/^-+|-+$/g, ''); 
+}
 
 $('#visitorMap3').vectorMap({
     map: 'indonesia_id',
@@ -11,17 +17,17 @@ $('#visitorMap3').vectorMap({
     normalizeFunction: 'linear',
     selectedRegions: false,
     showTooltip: true,
+    onRegionClick: function(event, code, region){
+      var regionName = region;
+      console.log(regionName);
+    window.location.href = `/province/${slugify(regionName)}/capital_city`;
+    }
 });
 
-  // document.getElementById("button").addEventListener("click", function() {
-  //   document.getElementById("target-button").style.transform = "scale(2)";
-  // });
-
 $('#visitorMap3 svg g path').on('click', function() {
-
   $("#visitorMap3").css("transform", "scale(3)")
-  setTimeout(function() {
-    window.location.href = "/province/3/capital_city";
-  }, 1700);
+  // setTimeout(function() {
+  //   window.location.href = `/province/a/capital_city`;
+  // }, 1700);
 });
   

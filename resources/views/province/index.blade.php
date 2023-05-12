@@ -9,4 +9,15 @@
         </div>
       </div>
 </div>
+
+@push('css')
+  <link rel="stylesheet" href="/jqvmap/dist/jqvmap.min.css">
+@endpush
+
+@push('javascript')
+  <script src="/jqvmap/dist/jquery.vmap.min.js"></script>
+  <script src="/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+  <script src="/jqvmap/dist/maps/jquery.vmap.indonesia.js"></script>
+@endpush
+
 @endsection
