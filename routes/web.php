@@ -14,13 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('start');
+    return view('index');
 });
 
+Route::get('/province/start', function () {
+    return view('province.start');
+});
 Route::get('/province', function () {
     return view('province.index');
 });
 
-Route::get('/province/{name}/capital_city', function () {
+Route::get('/province/{slug}/capital_city', function () {
     // return view('province.index');
 });

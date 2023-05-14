@@ -2,6 +2,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.fw-300 {
+    font-weight: 300;
+}
+
 .header-hero {
     padding: 140px 0px 20px 10px;
 }
@@ -59,4 +63,17 @@ body {
     position: absolute;
     transition: transform 2.4s ease;
     transform: translateX(30);
+}
+
+.initial-content {
+    height: 130px;
+}
+
+.initial-content img {
+    transition: 0.4s;
+}
+
+.initial-content img:hover {
+    transform: scale(1.04);
+    transition: 0.4s;
 }
