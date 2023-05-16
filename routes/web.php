@@ -16,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/domge/run', function () {
+    return view('domge-run.index');
+});
+
+Route::get('/pukul', function () {
+    return view('pukul.start');
+});
 
 Route::get('/province/start', function () {
     return view('province.start');

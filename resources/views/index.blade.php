@@ -21,7 +21,7 @@
                     </a>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 gy-4">
-                    <a href="/pukul/china" class="initial-content rounded-4">
+                    <a href="/pukul" class="initial-content rounded-4">
                         <img src="{{asset('img/lobby/space-elevator.svg')}}" alt="">
                     </a>
                 </div>

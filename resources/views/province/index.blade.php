@@ -18,6 +18,7 @@
   <script src="/jqvmap/dist/jquery.vmap.min.js"></script>
   <script src="/jqvmap/dist/maps/jquery.vmap.world.js"></script>
   <script src="/jqvmap/dist/maps/jquery.vmap.indonesia.js"></script>
+  <script src="{{asset('js/main.js')}}"></script>
 @endpush
 
 @endsection
