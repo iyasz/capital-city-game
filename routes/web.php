@@ -24,6 +24,10 @@ Route::get('/pukul', function () {
     return view('pukul.start');
 });
 
+Route::get('/pukul/china', function () {
+    return view('pukul.china');
+});
+
 Route::get('/province/start', function () {
     return view('province.start');
 });
@@ -33,4 +37,8 @@ Route::get('/province', function () {
 
 Route::get('/province/{slug}/capital_city', function () {
     // return view('province.index');
+});
+
+Route::get('/test/anime', function () {
+    return view('test.index');
 });

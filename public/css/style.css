@@ -10,6 +10,11 @@ body {
     padding: 140px 0px 20px 10px;
 }
 
+.text-content-index {
+    font-size: 45px;
+    font-weight: 600;
+}
+
 .header-hero .h1-header-hero {
     font-size: 59px;
     line-height: 1;
@@ -65,12 +70,10 @@ body {
     transform: translateX(30);
 }
 
-.initial-content {
-    height: 130px;
-}
 
 .initial-content img {
     transition: 0.4s;
+    border: 2px solid black;
 }
 
 .initial-content img:hover {
@@ -105,3 +108,78 @@ body {
     bottom: 0;
     right: 0;
 }
+
+/* game pukul  */
+
+.container.btn-game {
+    height: 100vh;
+}
+
+.wrapper-all-doge {
+    padding: 100px 0;
+}
+
+.domge {
+    z-index: 4;
+}
+
+.main-character {
+    position: absolute;
+    width: 230px !important;
+    height: 230px !important;
+    right: 290px;
+    top: 40px;
+}
+
+.btn.btn-primary.btn-pukul {
+    background: #ac46ff;
+    color: #f4f4f4;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn.btn-primary.btn-pukul::before,
+.btn.btn-primary.btn-pukul::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #920ffe; /* adjust the background color as needed */
+    transition: width 0.3s ease-in-out;
+}
+
+.btn.btn-primary.btn-pukul::before {
+    left: -100%;
+}
+
+.btn.btn-primary.btn-pukul::after {
+    left: 0;
+}
+
+.btn.btn-primary.btn-pukul:hover::before,
+.btn.btn-primary.btn-pukul:hover::after {
+    width: 100%;
+}
+
+
+/* end game pukul  */
+
+/* test  */
+
+.text-space-main {
+    animation: fade-in infinite 1.2s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.header-hero.test img {
+    /* position: absolute; */
+}
+/* end test  */

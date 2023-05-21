@@ -2,14 +2,23 @@
 
 @section('content')
 
-<div class="container overflow-hidden ">
-    <div class="row">
+<div class="container mt-5 ">
+    <div class="row justify-content-center ">
+      <div class="col-12 mt-5">
+        <div class="text-center mb-4">
+          <h1>Choose Your Type</h1>
+        </div>
+      </div>
+      <div class="col-3">
+        <a href="/pukul/jawir" class="btn btn-primary btn-pukul border-0 w-100 rounded-0 py-3 mx-3">Jawir</a>
+      </div>
+      <div class="col-3">
+        <a href="/pukul/china" class="btn btn-primary btn-pukul border-0 w-100 rounded-0 py-3 mx-3">John China</a>
+      </div>
+      <div class="col-3">
+        <a href="/pukul/meler" class="btn btn-primary btn-pukul border-0 w-100 rounded-0 py-3 mx-3">Meler</a>
+      </div>
         <div class="col-12">
-            <div class="text-center">
-                <a href="/pukul/jawir" class="btn btn-primary mx-3">Jawir</a>
-                <a href="/pukul/china" class="btn btn-primary mx-3">China</a>
-                <a href="/pukul/meler" class="btn btn-primary mx-3">Meler</a>
-            </div>
         </div>
       </div>
 </div>
