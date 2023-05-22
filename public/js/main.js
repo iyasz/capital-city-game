@@ -1,3 +1,44 @@
+$('#btnSearchProvince').on('click', function(){
+
+    $.ajax({
+        type: 'GET',
+        url: '/search/capital_city',
+        data: {
+            slug: location.pathname.split('/')[2],
+            capital_city: $('#capitalCityName').val(),
+        },
+        success: function(e){
+            if(e == 'TRUE'){
+                iziToast.show({
+                    title: "Benar",
+                    message: "Jawaban Anda Benar!",
+                    position: "topCenter",
+                    drag: false,
+                    pauseOnHover: false,
+                    color: "green",
+                    iconUrl: null,
+                    timeout: 4100,
+                });
+            }else{
+                iziToast.show({
+                    title: "Salah",
+                    message: "Jawaban Anda Salah!",
+                    position: "topCenter",
+                    drag: false,
+                    pauseOnHover: false,
+                    color: "red",
+                    iconUrl: null,
+                    timeout: 4100,
+                });
+                
+            }
+        },
+    })
+
+})
+
+
+
 function slugify(string) {
     return string
         .toLowerCase()
@@ -29,3 +70,4 @@ $("#visitorMap3").vectorMap({
 $("#visitorMap3 svg g path").on("click", function () {
     $("#visitorMap3").css("transform", "scale(3)");
 });
+

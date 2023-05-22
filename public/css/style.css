@@ -6,6 +6,19 @@ body {
     font-weight: 300;
 }
 
+.form-control {
+    font-weight: 500;
+    letter-spacing: 1.3px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.fs-s-sm {
+    font-size: 13px;
+}
+
 .header-hero {
     padding: 140px 0px 20px 10px;
 }
