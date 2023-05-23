@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProvinceController;
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,6 +40,5 @@ Route::get('/province', function () {
 Route::get('/province/{slug}/capital_city', [ProvinceController::class, 'index']);
 Route::get('/search/capital_city', [ProvinceController::class, 'searchCapitalCity']);
 
-Route::get('/test/anime', function () {
-    return view('test.index');
-});
+Route::get('/test/anime', [TestController::class, 'index']);
+Route::get('/test/pertanyaan/{id}', [TestController::class, 'pertanyaan']);
